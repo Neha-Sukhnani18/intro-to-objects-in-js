@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var value = Math.abs(100);
+        document.write("demo test value;" + value + "<br>");
+        var value = Math.acos(-7);
+        document.write("demo test value;" + value + "<br>");
+        var value = Math.asin(8);
+        document.write("demo test value;" + value + "<br>");
+        var value = Math.atan(.5);
+        document.write("demo test value;" + value + "<br>");
+   </script>
+    <p>finding the largest number with the help of objects arguments</p>
+    <p id="result"></p>
+    <script>
+        function findMax() {
+            var i;
+            var max = 0;
+            for (i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("result").innerHTML = findMax(88, 66, 77);
+    </script>
+</body>
+
+</html>
